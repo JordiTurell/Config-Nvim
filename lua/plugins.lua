@@ -61,7 +61,21 @@ packer.startup(function(use)
 	-- Colorschemes --
 	use("RRethy/nvim-base16")
 	use("kyazdani42/nvim-palenight.lua")
-
+	use('folke/tokyonight.nvim')
+	use({
+			"utilyre/barbecue.nvim",
+			requires = {
+				"neovim/nvim-lspconfig",
+			    "smiteshp/nvim-navic",
+			    "nvim-tree/nvim-web-devicons", -- optional dependency
+			},
+			after = "nvim-web-devicons", -- keep this if you're using NvChad
+			config = function()
+				require("barbecue").setup({
+					
+				})
+			end,
+		})
 -- Plugins Packer per poder instalar els plugins --
 	use('wbthomason/packer.nvim')
 
