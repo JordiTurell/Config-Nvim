@@ -1,3 +1,4 @@
+--[[
 require('telescope').setup {
    defaults = {
       vimgrep_arguments = {
@@ -60,4 +61,4 @@ require('telescope').setup {
    },
 }
 
-
+]]--
