@@ -5,11 +5,11 @@ require ('plugins')
 
 ------------ Configuracions especial segons els plugins instalats -------------
 --require('coc')
-require('customTelescope')
+require('lua.Telescope.customTelescope')
 require ('settings')
-require('bottombar')
-require('custombufstabs')
-require('theme')
+require('lua.BottomBar.bottombar')
+require('lua.Tabs.custombufstabs')
+require('lua.Theme.theme')
 
 -- Nvim LSP config
 require('lspconfig').pyright.setup{}
