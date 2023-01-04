@@ -51,10 +51,15 @@ packer.startup(function(use)
 	use { 'neoclide/coc.nvim', branch='release' } -- el Intelligence
 	use('lervag/vimtex')
 	
+	
 	--Sintaxis de codics de programacio
 	use("vim-python/python-syntax")
 	use('ap/vim-css-color')
+	
+	-- Confgiuració per C#
 
+
+--	use('tpop/vim-surround')	
 	-- BufersTabs --
 	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
@@ -83,3 +88,5 @@ packer.startup(function(use)
 		packer.sync()
 	end
 end)
+
+

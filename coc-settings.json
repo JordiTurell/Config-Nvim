@@ -8,5 +8,14 @@
     }
   },
   "snippets.ultisnips.pythonPrompt": false
-  
+  "diagnostic.messageTarget":"float",
+  "diagnostic.checkCurrentLine":true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.vistualTextPrefix": "<-",
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports":true,
+  "omnisharp.version": "v.1.37.3",
+  "omnisharp.trace.server": "information",
+  "omnisharp.debug.server": true
 }
