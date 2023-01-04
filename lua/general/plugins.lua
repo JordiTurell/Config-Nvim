@@ -57,7 +57,8 @@ packer.startup(function(use)
 	use('ap/vim-css-color')
 	
 	-- Confgiuració per C#
-
+	use('OmniSharp/omnisharp-vim')
+	use('dense-analysis/ale')
 
 --	use('tpop/vim-surround')	
 	-- BufersTabs --

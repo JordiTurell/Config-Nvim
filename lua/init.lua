@@ -5,3 +5,7 @@ require 'BottomBar.init'
 require 'Tabs.init'
 require 'Theme.init'
 require 'CocConfig.init'
+require 'OmniSharpConfig.init'
+
+
+

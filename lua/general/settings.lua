@@ -21,3 +21,6 @@ opt.splitright = true --Al divir la pantalla senva sempre a la dreta
 opt.hidden = true --No se que collons fot aixo
 opt.guifont = "Hack Nerd Font Mono" -- El tipos de font que vols que faci servir neovim
 opt.lazyredraw = true -- para que no rescrigui tota la pantalla cada cop que guardis (o_0)'
+opt.encoding = 'utf-8'
+opt.fileencoding = 'utf-8'
+opt.termencoding = 'utf-8'
