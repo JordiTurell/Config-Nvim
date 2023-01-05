@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ale = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   ["barbecue.nvim"] = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rbarbecue\frequire\0" },
     load_after = {},
@@ -127,10 +132,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-palenight.lua",
     url = "https://github.com/kyazdani42/nvim-palenight.lua"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ufo"] = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ufo",
+    url = "https://github.com/kevinhwang91/nvim-ufo"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["omnisharp-vim"] = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\omnisharp-vim",
+    url = "https://github.com/OmniSharp/omnisharp-vim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -141,6 +161,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["promise-async"] = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\promise-async",
+    url = "https://github.com/kevinhwang91/promise-async"
   },
   ["python-syntax"] = {
     loaded = true,
@@ -171,11 +196,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
-    url = "https://github.com/tpope/vim-surround"
   },
   vimtex = {
     loaded = true,

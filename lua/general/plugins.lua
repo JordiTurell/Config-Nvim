@@ -44,10 +44,7 @@ packer.startup(function(use)
 	-- Buscador d'artxius i de fitxers
 	use('nvim-lua/plenary.nvim')
 	use('nvim-telescope/telescope.nvim')
-
-	-- Et tanca autoamticament les etiquetes que escrius [], {}, (), '', <>...
-	use("tpope/vim-surround")
-    
+ 
 	use { 'neoclide/coc.nvim', branch='release' } -- el Intelligence
 	use('lervag/vimtex')
 	
@@ -57,6 +54,9 @@ packer.startup(function(use)
 	
 	-- Confgiuració per C#
 	use('sheerun/vim-polyglot')
+	use('OmniSharp/omnisharp-vim')
+	use('dense-analysis/ale')
+	use('neovim/nvim-lspconfig')
 
 --	use('tpop/vim-surround')	
 	-- BufersTabs --
@@ -80,7 +80,12 @@ packer.startup(function(use)
 				})
 			end,
 		})
--- Plugins Packer per poder instalar els plugins --
+
+	-- Para la sangria del codigo
+	use{'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
+	use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+
+	-- Plugins Packer per poder instalar els plugins --
 	use('wbthomason/packer.nvim')
 
 	if packer_bootstrap then
