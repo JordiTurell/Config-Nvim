@@ -51,13 +51,12 @@ packer.startup(function(use)
 	use { 'neoclide/coc.nvim', branch='release' } -- el Intelligence
 	use('lervag/vimtex')
 	
-	
 	--Sintaxis de codics de programacio
 	use("vim-python/python-syntax")
 	use('ap/vim-css-color')
 	
 	-- Confgiuració per C#
-
+	use('sheerun/vim-polyglot')
 
 --	use('tpop/vim-surround')	
 	-- BufersTabs --

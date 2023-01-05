@@ -167,6 +167,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-polyglot",
+    url = "https://github.com/sheerun/vim-polyglot"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
