@@ -63,6 +63,8 @@ packer.startup(function(use)
 --	use('tpop/vim-surround')	
 	-- BufersTabs --
 	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+	use {'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}
+}
 
 	-- Colorschemes --
 	use("RRethy/nvim-base16")

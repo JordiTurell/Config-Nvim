@@ -25,7 +25,7 @@ mapper("n", "<S-TAB>", ":bprev<CR>")
 
 mapper("n", "tv", ":vs<CR> :terminal<CR>")
 mapper("n", "th", ":sp<CR> :terminal<CR>")
-
+mapper("n", "tc", ":BufferDelete<CR>")
 
 
 
