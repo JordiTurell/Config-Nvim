@@ -1,8 +1,3 @@
---Alias
---local map = vim.api.nvim_set_keymap
---local default_ops = {noremap = true, silent = true}
---local cmd = vim.cmd
-
 local mapper = function(mode, key, result)
 	vim.api.nvim_set_keymap(mode, key, result, { noremap = true, silent = true })
 end
@@ -17,7 +12,6 @@ mapper("n", "n", ":NERDTreeToggle<CR>")
 mapper("n", "wv", ":vs<CR>")
 mapper("n", "wh", ":sp<CR>")
 mapper("n", "<C-z>", ":ea<CR>")
---mapper("n", "n", ":NerdTree") -- Per obrir el NerTree a la funcio li pases parametre 1 (Modo normal) parametre 2 (conjunt de tecles) Parametre 3 (Comando que ha de executar)
 mapper("n", "ff", ":Telescope git_files hidden=true<CR>")
 mapper("n", "fg", ":Telescope live_grep<CR>")
 mapper("n", "<TAB>", ":bnext<CR>")
@@ -29,4 +23,14 @@ mapper("n", "tc", ":BufferDelete<CR>")
 
 
 
---mapper("n", "gd", vim.lsp.buf.definition)
+mapper("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
+
+-- Auto completado de llaves parentesis, etc.
+mapper("i", "(", "()<Esc>i")
+mapper("i", "{", "{}<Esc>i")
+mapper("i", "{<CR>", "{<CR>}<Esc>O")
+mapper("i", "[", "[]<Esc>i")
+mapper("i", "[<CR>", "[<CR>]<Esc>O")
+mapper("i", "<", "<><Esc>i")
+mapper("i", "\"", "\"\"<Esc>i")
+mapper("i", "'", "''<Esc>i")
