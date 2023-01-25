@@ -81,7 +81,7 @@ _G.packer_plugins = {
   },
   ["barbar.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\jordi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\barbar.nvim",
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
   ["barbecue.nvim"] = {
@@ -96,6 +96,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["coc.nvim"] = {
     loaded = true,
@@ -121,6 +126,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-base16",
     url = "https://github.com/RRethy/nvim-base16"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

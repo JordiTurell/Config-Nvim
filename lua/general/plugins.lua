@@ -1,4 +1,4 @@
-local fn = vim.fnplugin
+local fn = vim.fn
 
 -- Automatically install packer
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -56,7 +56,9 @@ packer.startup(function(use)
 	use('sheerun/vim-polyglot')
 	use('OmniSharp/omnisharp-vim')
 	use('dense-analysis/ale')
-	use('neovim/nvim-lspconfig')
+	use 'neovim/nvim-lspconfig' -- native LSP support
+	use 'hrsh7th/nvim-cmp' -- autocompletion framework
+	use 'hrsh7th/cmp-nvim-lsp' -- LSP autocompletion provider
 
 --	use('tpop/vim-surround')	
 	-- BufersTabs --
