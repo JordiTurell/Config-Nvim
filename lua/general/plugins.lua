@@ -42,8 +42,7 @@ packer.startup(function(use)
 	--Lua Line la barra dabaix
 	use("nvim-lualine/lualine.nvim")
 	-- Buscador d'artxius i de fitxers
-	use('nvim-lua/plenary.nvim')
-	use('nvim-telescope/telescope.nvim')
+	use{ 'nvim-telescope/telescope.nvim', tag = '0.1.2', requires = {{ 'nvim-lua/plenary.nvim' }}}
  
 	use { 'neoclide/coc.nvim', branch='release' } -- el Intelligence
 	use('lervag/vimtex')
@@ -54,7 +53,7 @@ packer.startup(function(use)
 	
 	-- Confgiuració per C#
 	use('sheerun/vim-polyglot')
-	use('OmniSharp/omnisharp-vim')
+	--use('OmniSharp/omnisharp-vim')
 	use('dense-analysis/ale')
 	use 'neovim/nvim-lspconfig' -- native LSP support
 	use 'hrsh7th/nvim-cmp' -- autocompletion framework
