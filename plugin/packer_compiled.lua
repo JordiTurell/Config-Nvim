@@ -102,11 +102,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["coc.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
-  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
@@ -161,11 +156,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["omnisharp-vim"] = {
-    loaded = true,
-    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\omnisharp-vim",
-    url = "https://github.com/OmniSharp/omnisharp-vim"
   },
   ["packer.nvim"] = {
     loaded = true,

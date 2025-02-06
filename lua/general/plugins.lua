@@ -44,7 +44,7 @@ packer.startup(function(use)
 	-- Buscador d'artxius i de fitxers
 	use{ 'nvim-telescope/telescope.nvim', tag = '0.1.2', requires = {{ 'nvim-lua/plenary.nvim' }}}
  
-	use { 'neoclide/coc.nvim', branch='release' } -- el Intelligence
+--	use { 'neoclide/coc.nvim', branch='release' } -- el Intelligence
 	use('lervag/vimtex')
 	
 	--Sintaxis de codics de programacio
