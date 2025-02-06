@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ale",
     url = "https://github.com/dense-analysis/ale"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\barbar.nvim",
@@ -102,15 +107,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["coc.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
-  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
+  },
+  fzf = {
+    loaded = true,
+    path = "C:\\Users\\jordi.turell\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf",
+    url = "https://github.com/junegunn/fzf"
   },
   ["lualine.nvim"] = {
     loaded = true,
