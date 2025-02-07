@@ -1,9 +1,32 @@
-vim.o.relativenumber = true
-vim.o.number = true
+local cmd = vim.cmd
+local exec = vim.api.nvim_exec
+local fn = vim.fn
+local g = vim.g
+local opt = vim.opt
 
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+--General 
+g.mapleader = ";"
+
+-- UI
+opt.updatetime = 250
+opt.number = true  --Els numeros de linea.
+opt.relativenumber = false -- Si et mous per els numeros i aixo esta a false no es van modificant.
+opt.clipboard = "unnamedplus"
+g.transparent_background = true
+
+--vim.opt.shell = 'pwsh.exe' --Aixo enteoria es per la terminal perque es obri desde el neovim
+
+opt.splitright = true --Al divir la pantalla senva sempre a la dreta
+opt.hidden = true --No se que collons fot aixo
+opt.guifont = "Hack Nerd Font Mono" -- El tipos de font que vols que faci servir neovim
+opt.lazyredraw = true -- para que no rescrigui tota la pantalla cada cop que guardis (o_0)'
+opt.encoding = 'utf-8'
+opt.fileencoding = 'utf-8'
+opt.termencoding = 'utf-8'
+vim.o.foldcolumn = '1' -- '0' is not bad
+vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
 
 local ensure_packer = function()
   local fn = vim.fn
@@ -19,7 +42,6 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
   
   ---------------- Mis plugins  -----------------
   -- NERDTree la barra per mouret entre archius
@@ -28,11 +50,26 @@ return require('packer').startup(function(use)
 	use("ryanoasis/vim-devicons")
     --Lua Line la barra dabaix
 	use("nvim-lualine/lualine.nvim")
+    -- Pantalla d'inici del NeoVIM
+	use('glepnir/dashboard-nvim')
     -- Buscador d'artxius i de fitxers
 	use{ 'nvim-telescope/telescope.nvim', tag = '0.1.2', requires = {{ 'nvim-lua/plenary.nvim' }}}
 
+    -- BufersTabs --
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
-		use {'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}}
+	use {'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}}
+
+    --Sintaxis de codics de programacio
+	use("vim-python/python-syntax")
+	use('ap/vim-css-color')
+
+    -- Confgiuració per C#
+	use('sheerun/vim-polyglot')
+	--use('OmniSharp/omnisharp-vim')
+	use('dense-analysis/ale')
+	use 'neovim/nvim-lspconfig' -- native LSP support
+	use 'hrsh7th/nvim-cmp' -- autocompletion framework
+	use 'hrsh7th/cmp-nvim-lsp' -- LSP autocompletion provider
 
     use("RRethy/nvim-base16")
 		use("kyazdani42/nvim-palenight.lua")
@@ -51,7 +88,12 @@ return require('packer').startup(function(use)
 					})
 				end,
 			})
+    
+    -- Para la sangria del codigo
+	use{'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
+	use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
+    use 'wbthomason/packer.nvim'
   if packer_bootstrap then
     require('packer').sync()
   end
